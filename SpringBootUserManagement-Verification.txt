@@ -1,0 +1,15 @@
+				User Management - Authenication - Authorization
+	- User Management: Đăng ký tk, cập nhật (email, pw, info), tìm kiếm (email, tên,...), Xác nhận (verify qua Email
+, SMS), role (privileges - đặc quyền), password (xưa: lưu plain pw, nay: băm(hash) pw)
+
+	- Authentication (xác thực, dễ hiểu thì liên tưởng đến câu hỏi Who are you?): có sẵn trong ứng dụng (built in),
+nhờ bên thứ 3 xác thực hộ (3rd party authentication --> có chuẩn OAuth1 --> OAuth2), Spring Security
+
+	- Authorization (phân quyền): Role - Priviledge, RBAC (Role Based Access Control, chuẩn phổ biến.)--> 1role có 
+quyền, 1 người có nhiều role
+
+	- Thiết kế bảng/model: user, role, priviledge (ví dụ AWS thiết kế rất tuyệt vời về phân quyền)
+
+	- Dependencies: Web, DevTools, Lombook, JavaMail, Thymeleaf, Spring Session Core, Validation, AssertJ
+
+	- Function: Login, Register, Activate, Change password
